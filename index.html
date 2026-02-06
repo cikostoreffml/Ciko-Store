@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FAVICON (Logo Tab Browser) -->
+  <!-- FAVICON -->
   <link rel="icon" type="image/png" href="Image/logo2.png">
 
   <title>Ciko Store – Jual Beli Akun FF & ML</title>
 
-  <!-- GOOGLE FONT -->
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -27,43 +27,41 @@
 
     /* ================= HEADER ================= */
     header {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(10px);
-      padding: 25px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255, 215, 0, 0.3);
       position: sticky;
       top: 0;
       z-index: 100;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,215,0,0.3);
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 10px;
     }
 
     .logo img {
-      width: 55px;
-      height: 55px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      box-shadow: 0 0 25px rgba(255,215,0,0.6);
-      background: #000;
+      box-shadow: 0 0 15px rgba(255,215,0,0.6);
     }
 
     header h1 {
-      font-size: 26px;
+      font-size: 18px;
       color: gold;
-      letter-spacing: 1px;
     }
 
     nav a {
+      font-size: 14px;
       color: #ddd;
       text-decoration: none;
-      margin-left: 30px;
-      transition: 0.3s;
+      margin-left: 15px;
     }
 
     nav a:hover {
@@ -72,120 +70,104 @@
 
     /* ================= HERO ================= */
     .hero {
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 80px 20px 70px;
       text-align: center;
       background: radial-gradient(circle at top, rgba(255,215,0,0.15), transparent 60%);
-      animation: fadeIn 1.5s ease;
+      animation: fadeIn 1.2s ease;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
+      from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     .hero h2 {
-      font-size: 48px;
+      font-size: 28px;
       color: gold;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      max-width: 600px;
-      margin: auto;
+      font-size: 14px;
       color: #ccc;
+      line-height: 1.6;
     }
 
     .hero button {
-      margin-top: 40px;
-      padding: 15px 45px;
+      margin-top: 25px;
+      padding: 13px 35px;
       border: none;
       border-radius: 50px;
       background: linear-gradient(135deg, gold, #c9a227);
       color: #000;
       font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 10px 30px rgba(255,215,0,0.3);
-      transition: 0.3s;
-    }
-
-    .hero button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 40px rgba(255,215,0,0.5);
+      font-size: 14px;
+      box-shadow: 0 10px 25px rgba(255,215,0,0.4);
     }
 
     /* ================= FEATURES ================= */
     .features {
-      padding: 90px 60px;
+      padding: 60px 20px;
       background: #0d0d0d;
     }
 
     .features h3 {
       text-align: center;
-      font-size: 32px;
-      margin-bottom: 60px;
+      font-size: 24px;
+      margin-bottom: 40px;
       color: gold;
     }
 
     .feature-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
+      grid-template-columns: 1fr;
+      gap: 25px;
     }
 
     .feature-box {
       background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-      padding: 40px 30px;
-      border-radius: 20px;
+      padding: 25px;
+      border-radius: 18px;
       text-align: center;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.7);
-      transition: 0.4s;
-    }
-
-    .feature-box:hover {
-      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7);
     }
 
     .feature-box h4 {
+      font-size: 18px;
       color: gold;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .feature-box p {
+      font-size: 13px;
       color: #bbb;
-      font-size: 14px;
     }
 
     /* ================= PRODUCTS ================= */
     .products {
-      padding: 100px 60px;
+      padding: 70px 20px;
       background: radial-gradient(circle at top, rgba(255,215,0,0.08), #0f0f0f 60%);
     }
 
     .products h3 {
       text-align: center;
-      font-size: 34px;
-      margin-bottom: 70px;
+      font-size: 26px;
+      margin-bottom: 45px;
       color: gold;
-      text-shadow: 0 0 15px rgba(255,215,0,0.4);
     }
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
+      grid-template-columns: 1fr;
+      gap: 25px;
     }
 
     .card {
       position: relative;
       background: linear-gradient(160deg, #1b1b1b, #0c0c0c);
-      border-radius: 22px;
-      padding: 35px 30px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-      transition: 0.4s;
-      overflow: hidden;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.8);
     }
 
     .card::before {
@@ -193,29 +175,25 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
       height: 4px;
+      width: 100%;
       background: linear-gradient(90deg, gold, #c9a227, gold);
     }
 
-    .card:hover {
-      transform: translateY(-12px) scale(1.02);
-      box-shadow: 0 30px 70px rgba(255,215,0,0.25);
-    }
-
     .card h4 {
+      font-size: 18px;
       color: gold;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .card p {
+      font-size: 13px;
       color: #bbb;
-      font-size: 14px;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
 
     .card span {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 700;
       color: gold;
     }
@@ -228,10 +206,34 @@
     /* ================= FOOTER ================= */
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 25px 15px;
       background: #0b0b0b;
       color: #777;
+      font-size: 12px;
       border-top: 1px solid rgba(255,215,0,0.2);
+    }
+
+    /* ================= DESKTOP UPGRADE ================= */
+    @media (min-width: 768px) {
+      header {
+        padding: 25px 60px;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   </style>
 </head>
@@ -244,33 +246,31 @@
     <h1>CikoStore</h1>
   </div>
   <nav>
-    <a href="produkall.html">Semua Akun</a>
+    <a href="produkall.html">Produk</a>
     <a href="kontak.html">Kontak</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div>
-    <h2>Selamat Datang di Ciko Store</h2>
-    <p>Website premium jual beli akun Free Fire & Mobile Legends. Aman, terpercaya, dan siap pakai.</p>
-    <button>Mulai Belanja</button>
-  </div>
+  <h2>Jual Beli Akun FF & ML</h2>
+  <p>Akun siap pakai, harga jujur, admin fast respon & transaksi aman.</p>
+  <button>Mulai Belanja</button>
 </section>
 
 <section class="features">
-  <h3>Kenapa Memilih CikoStore?</h3>
+  <h3>Kenapa CikoStore?</h3>
   <div class="feature-grid">
     <div class="feature-box">
       <h4>100% Aman</h4>
-      <p>Transaksi aman dengan sistem verifikasi berlapis.</p>
+      <p>Transaksi terpercaya dan terjamin.</p>
     </div>
     <div class="feature-box">
       <h4>FF & ML Original</h4>
-      <p>Menjual akun Free Fire & Mobile Legends terpercaya.</p>
+      <p>Akun legal & siap dimainkan.</p>
     </div>
     <div class="feature-box">
-      <h4>Admin Fast Respon</h4>
-      <p>Pelayanan cepat dan ramah setiap hari.</p>
+      <h4>Fast Respon</h4>
+      <p>Admin online setiap hari.</p>
     </div>
   </div>
 </section>
@@ -282,7 +282,7 @@
     <a href="produk1.html" class="card-link">
       <div class="card">
         <h4>Akun Sultan FF</h4>
-        <p>Skin lengkap, rank tinggi, siap turnamen.</p>
+        <p>Skin lengkap & rank tinggi.</p>
         <span>Rp 500.000 – Rp 1.500.000</span>
       </div>
     </a>
@@ -290,7 +290,7 @@
     <a href="produk2.html" class="card-link">
       <div class="card">
         <h4>Akun Sultan ML</h4>
-        <p>Hero & skin lengkap, siap push rank.</p>
+        <p>Hero & skin premium.</p>
         <span>Rp 500.000 – Rp 1.500.000</span>
       </div>
     </a>
@@ -298,7 +298,7 @@
     <a href="produk3.html" class="card-link">
       <div class="card">
         <h4>Akun FF & ML Receh</h4>
-        <p>Cocok untuk pemula & akun cadangan.</p>
+        <p>Cocok buat pemula.</p>
         <span>Rp 20.000 – Rp 350.000</span>
       </div>
     </a>
